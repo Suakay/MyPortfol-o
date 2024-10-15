@@ -1,0 +1,42 @@
+﻿@model MyPortfolıo.DAL.Entites.About
+
+<header class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
+                <nav>
+                    <div id="menu-toggle">
+                        <div class="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                        <div class="cross">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <ul class="main-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
+                <div class="hero-text">
+                    <h3>@Model.Title</h3>
+                    <h3>@Model.SubTitle</h3>
+                    <p>@Model.Description</p>
+                    <a href="#" class="btn btn-lg btn-primary">Download CV</a>
+                    <ul class="social-links">
+                        <li class="label">Join me here</li>
+                 
+                        <li><a href="https://www.linkedin.com/in/bengu-s-b144961a6/"><img src="~/One-Page-Portfolio-Template-master/assets/LinkedIn.png"></a></li>
+                        <li><a href="https://github.com/Suakay?tab=repositories"><img src="~/One-Page-Portfolio-Template-master/assets/github.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
