@@ -1,6 +1,6 @@
 ﻿@model MyPortfolıo.DAL.Entites.About
 
-<header class="hero">
+<header id="about"class="hero">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-6 col-xs-12">
@@ -17,10 +17,11 @@
                         </div>
                     </div>
                     <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="">Anasayfa</a></li>
+                        <li><a href="#about">Hakkımda</a></li>
+                        <li><a href="#">Yetkinliklerim</a></li>
+                        <li><a href="#">Teknolojiler</a></li>
+                        <li><a href="#">İletişim</a></li>
                     </ul>
                 </nav>
                 <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
@@ -28,12 +29,13 @@
                     <h3>@Model.Title</h3>
                     <h3>@Model.SubTitle</h3>
                     <p>@Model.Description</p>
-                    <a href="#" class="btn btn-lg btn-primary">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1TRyR6RDFYGOIWEd6720fqQSATkiXoYuo/view?usp=sharing" class="btn btn-lg btn-primary">Download CV</a>
                     <ul class="social-links">
-                        <li class="label">Join me here</li>
+                        <li class="label">Adreslerim</li>
                  
-                        <li><a href="https://www.linkedin.com/in/bengu-s-b144961a6/"><img src="~/One-Page-Portfolio-Template-master/assets/LinkedIn.png"></a></li>
-                        <li><a href="https://github.com/Suakay?tab=repositories"><img src="~/One-Page-Portfolio-Template-master/assets/github.png"></a></li>
+                        <li><a href="@Model.LinkedinUrl" target="_blank"><img src="~/One-Page-Portfolio-Template-master/assets/linkedintasarım.png"></a></li>
+                        <li><a href="@Model.GithubUrl" target="_blank"><img src="~/One-Page-Portfolio-Template-master/assets/github.png"></a></li>
+                        <li><a href="@Model.MediumUrl" target="_blank"><img src="~/One-Page-Portfolio-Template-master/assets/resim (3).png"></a></li>
                     </ul>
                 </div>
             </div>
