@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyPortfolıo.DAL.Context;
+using MyPortfolıo.DAL.Entites;
 
 namespace MyPortfolıo.ViewComponents
 {
@@ -13,9 +14,11 @@ namespace MyPortfolıo.ViewComponents
         }
         public IViewComponentResult Invoke()
         {
-            var model=_context.Experiences.FirstOrDefault();
-            return View(model); 
+            var models=_context.Experiences.ToList();
+            return View(models); 
             
         }
+       
+
     }
 }
